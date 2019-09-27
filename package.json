@@ -1,0 +1,27 @@
+{
+  "name": "sinaMicroblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "node_modules/.bin/webpack -v",
+    "runDist": "node_modules/.bin/webpack --config webpack1.js --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zy9928/sinaMicroblog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zy9928/sinaMicroblog/issues"
+  },
+  "homepage": "https://github.com/zy9928/sinaMicroblog#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}

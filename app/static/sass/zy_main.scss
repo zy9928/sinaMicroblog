@@ -1,0 +1,109 @@
+main{
+    // 滚动测试
+    // height:10000px;
+    width: 1170px;
+    margin-left: -585px;
+    left: 50%;
+    padding-top: 15px;
+    position: absolute;
+    top: 51px;
+    // 左侧导航栏
+    .zy_mainNav{
+        width: 110px;
+        float:left;
+        // 导航内容
+        .zy_mainNavA{
+            display: block;
+            height: 40px;
+            font-size: 18px;
+            line-height: 40px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            // 导航划过特效
+            &:hover{
+                background: linear-gradient(160deg, #FA302F, #FF5B36);
+                color: #fff;
+            }
+        }
+        // 导航点击特效
+        .zy_mainNavAActive{
+            background: linear-gradient(160deg, #FA302F, #FF5B36);
+            color: #fff;
+        }
+    }
+    .zy_mainMain{
+        position: absolute;
+        left: 140px;
+        width: 660px;
+        height: 10000px;
+        // banner区
+        .zy_mainBannerKuai{
+            width: 660px;
+            height: 308px;
+            // banner滑动区域
+            .zy_mainBannerContLang{
+                height: 288px;
+                width: 660px;
+                // banner内容
+                .zy_mainBannerCont{
+                    width:660px;
+                    height:308px;
+                    float:left;
+                    // banner小图1
+                    .zy_bannerContImgKuan1{
+                        display: block;
+                        float: left;
+                        width: 512px;
+                        height: 288px;
+                        background-size: 100% 100%;
+                        position: relative;
+                        margin-right: 8px;
+                    }
+                    // banner小图2
+                    .zy_bannerContImgKuan2{
+                        display: block;
+                        float: left;
+                        width: 140px;
+                        height: 140px;
+                        background-size: 100% 100%;
+                        position: relative;
+                        // banner小图2,3的标题
+                        .zy_bannerCOntText2{
+                            font-size: 14px;
+                            color: #fff;
+                            font-weight: bold;
+                            display: inline-block;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            padding:4px;
+                            line-height: 20px;
+                            background:linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0) 100%);
+                        }
+                    }
+                    .zy_bannerContImgKuan3{
+                        margin-top: 8px;
+                    }
+                }
+            }
+            // banner控制圆点
+            .swiper-pagination{
+                bottom: 2px;
+                .swiper-pagination-bullet{
+                    width: 6px;
+                    height: 6px;
+                }
+                .swiper-pagination-bullet-active{
+                    background: #FA7D3C;
+                }
+            }
+        }
+    }
+    .zy_mainAside{
+        float: right;
+        width: 340px;
+    }
+}

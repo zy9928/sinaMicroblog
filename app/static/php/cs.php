@@ -1,0 +1,1 @@
+$link = mysql_connect();

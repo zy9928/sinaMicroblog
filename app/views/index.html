@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>微博-随时随地发现新鲜事</title>
+<link rel="stylesheet" href="./../static/css/reset.css">
+<link rel="stylesheet" href="./../static/css/zy_header.css">
+<link rel="stylesheet" href="./../static/css/zy_main.css">
+<link rel="stylesheet" href="./../static/css/swiper.min.css">
+<link rel="stylesheet" href="./../static/icon/download/font_hnxxrl22zp/iconfont.css">
+</head>
+<body>
+<header>
+    <section class="zy_headerMain">
+        <!-- 头部logo -->
+        <a href="./index.html" class="zy_sinaLogo"></a>
+        <!-- 头部search -->
+        <div class="zy_headerForm">
+            <!-- 输入框 -->
+            <input type="text" name="zy_headerSearch" id="zy_headerSearch" class="zy_headerSearch" placeholder="">
+            <!-- 搜索按钮 -->
+            <a class="zy_headerSubmit iconfont">&#xe662;</a>
+            <!-- 搜索框提示词 -->
+            <span class="zy_headerSearchTs">大家都在搜：我和中国的一瞬间</span>
+            <!-- 热搜 -->
+            <div class="zy_headerHotSearch">
+                <p class="zy_headerHotSearchUl">
+                    <a href="" class="zy_headerHotSearchLi zy_headerHotSearchLiMore">查看完整热搜榜»</a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop zy_headerSearchTop1">1</i>李沁是重点培养的闺门旦苗子<i class="zy_headerSearchBj zy_headerHotBj">热</i></a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop zy_headerSearchTop2">2</i>李沁是重点培养的闺门旦苗子<i class="zy_headerSearchBj zy_headerNewBj">新</i></a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop">3</i>李沁是重点培养的闺门旦苗子</a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop">4</i>李沁是重点培养的闺门旦苗子<i class="zy_headerSearchBj zy_headerHotBj">热</i></a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop">5</i>李沁是重点培养的闺门旦苗子</a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop">6</i>李沁是重点培养的闺门旦苗子</a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop">7</i>李沁是重点培养的闺门旦苗子<i class="zy_headerSearchBj zy_headerNewBj">新</i></a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop">8</i>李沁是重点培养的闺门旦苗子<i class="zy_headerSearchBj zy_headerNewBj">新</i></a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop">9</i>李沁是重点培养的闺门旦苗子</a>
+                    <a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop">10</i>李沁是重点培养的闺门旦苗子<i class="zy_headerSearchBj zy_headerHotBj">热</i></a>
+                </p>
+            </div>
+            <!-- 联想输入推荐 -->
+            <div class="zy_headerSearchTj">
+                <ul class="zy_headerSearchTjUl">
+                    <!-- 推荐微博 -->
+                    <li class="zy_headerSearchWbLi">
+                        <!-- 推荐微博更多 -->
+                        <a href="" class="zy_headerSearchWb zy_headerSearchWbMore">搜索“<span class="zy_headerSearchValue">二哈</span>”相关微博</a>
+                        <!-- 推荐微博 -->
+                        <a href="" class="zy_headerSearchWb">二哈</a>
+                        <a href="" class="zy_headerSearchWb">二哈拆家</a>
+                        <a href="" class="zy_headerSearchWb">二哈一百种煮法</a>
+                        <a href="" class="zy_headerSearchWb">二哈怎么吃好</a>
+                    </li>
+                    <!-- 推荐用户 -->
+                    <li class="zy_headerSearchUserLi">
+                        <!-- 推荐用户更多 -->
+                        <a href="" class="zy_headerSearchUser zy_headerSearchUserMore">搜索“<span class="zy_headerSearchValue">二哈</span>”相关用户»</a>
+                        <!-- 推荐用户 -->
+                        <a href="" class="zy_headerSearchUser">
+                            <!-- 头像 -->
+                            <img src="./../static/images/zy_sinaUserHeadImg1.jpg" alt="" class="zy_headerSearchUserHeadImg">
+                            <!-- 用户名 + V字认证 -->
+                            <h5 class="zy_headerSearchUserID"><span class="zy_headerSearchUserName">二哈哈</span><i class="zy_headerSearchUserRz zy_headerSearchUserBv"></i></h5>
+                            <!-- 性别 + 粉丝数量 -->
+                            <p class="zy_headerSearchUserBc"><i class="zy_headerSearchUserSex zy_headerSearchUserMan"></i><span class="zy_headerSearchUserFs">粉丝：31563</span></p>
+                        </a>
+                        <a href="" class="zy_headerSearchUser">
+                            <img src="./../static/images/zy_sinaUserHeadImg2.jpg" alt="" class="zy_headerSearchUserHeadImg">
+                            <h5 class="zy_headerSearchUserID"><span class="zy_headerSearchUserName">二哈走丢了</span><i class="zy_headerSearchUserRz zy_headerSearchUserRv"></i></h5>
+                            <p class="zy_headerSearchUserBc"><i class="zy_headerSearchUserSex zy_headerSearchUserWoman"></i><span class="zy_headerSearchUserFs">粉丝：3</span></p>
+                        </a>
+                        <a href="" class="zy_headerSearchUser">
+                            <img src="./../static/images/zy_sinaUserHeadImg3.jpg" alt="" class="zy_headerSearchUserHeadImg">
+                            <h5 class="zy_headerSearchUserID"><span class="zy_headerSearchUserName">二哈最可爱</span><i class="zy_headerSearchUserRz zy_headerSearchUserYv"></i></h5>
+                            <p class="zy_headerSearchUserBc"><i class="zy_headerSearchUserSex zy_headerSearchUserMan"></i><span class="zy_headerSearchUserFs">粉丝：2222</span></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 头部导航栏 -->
+        <nav class="zy_headerNavKuai">
+            <!-- 导航 -->
+            <p class="zy_headerNavUl">
+                <!-- 导航标记 + 导航内容 -->
+                <a href="" class="zy_headerNavLi"><i class="zy_headerNavIc iconfont">&#xe616;</i><span class="zy_headerNav">首页</span></a>
+                <a href="" class="zy_headerNavLi"><i class="zy_headerNavIc iconfont">&#xe7c3;</i><span class="zy_headerNav">视频</span></a>
+                <a href="" class="zy_headerNavLi"><i class="zy_headerNavIc iconfont">&#xe609;</i><span class="zy_headerNav">发现</span></a>
+                <a href="" class="zy_headerNavLi"><i class="zy_headerNavIc iconfont">&#xe67e;</i><span class="zy_headerNav">游戏</span></a>
+            </p>
+            <!-- 登入注册 -->
+            <p class="zy_headerLogin">
+                <a href="" class="zy_headerJoin">注册</a>
+                <a href="" class="zy_headerEnter">登入</a>
+            </p>
+        </nav>
+    </section>
+
+</header>
+<main class="zy_tx">
+    <!-- main左侧导航栏 -->
+    <nav class="zy_mainNav">
+        <a href="#" class="zy_mainNavA zy_mainNavAActive">热门</a>
+        <a href="#" class="zy_mainNavA">头条</a>
+        <a href="#" class="zy_mainNavA">视频</a>
+        <a href="#" class="zy_mainNavA">榜单</a>
+        <a href="#" class="zy_mainNavA">搞笑</a>
+        <a href="#" class="zy_mainNavA">社会</a>
+        <a href="#" class="zy_mainNavA">时尚</a>
+        <a href="#" class="zy_mainNavA">电影</a>
+        <a href="#" class="zy_mainNavA">美女</a>
+        <a href="#" class="zy_mainNavA">体育</a>
+        <a href="#" class="zy_mainNavA">动漫</a>
+        
+    </nav>
+    <!-- 中心区 -->
+    <section class="zy_mainMain">
+        <!-- banner区 -->
+        <div class="zy_mainBannerKuai swiper-container">
+            <!-- banner滑动区 -->
+            <div class="zy_mainBannerContLang swiper-wrapper">
+                <!-- banner块 -->
+                <div class="zy_mainBannerCont1 swiper-slide zy_mainBannerCont">
+                    <!-- banner图1 -->
+                    <a class="zy_bannerContImgKuan1" style="background-image: url(./../static/images/zy_banner1Cont1.jpg);">
+                        <!-- 大banner的标题 -->
+                       <span class="zy_bannerContText2">
+                            <!-- 标题内容 -->
+                            <b class="zy_bannerContTextTitle">#猪肉价格降了#</b>
+                            <!-- 注释 -->
+                            <b class="zy_bannerContTextBz"><i class="zy_bannerContTextSpeek">2.5万讨论</i><i class="zy_bannerContTextRead">1.6亿阅读</i> </b>
+                       </span>
+                    </a>
+                    <!-- banner图2 -->
+                    <a class="zy_bannerContImgKuan2" style="background-image: url(./../static/images/zy_banner1Cont2.jpg);">
+                       <span class="zy_bannerCOntText2">#国庆假期或有近8亿人次出游#</span>
+                    </a>
+                    <!-- banner图3 -->
+                    <a class="zy_bannerContImgKuan3 zy_bannerContImgKuan2" style="background-image: url(./../static/images/zy_banner1Cont3.jpg);">
+                        <span class="zy_bannerCOntText2">#tfboys演唱会#</span>
+                    </a>
+                </div>
+                <div class="zy_mainBannerCont2 swiper-slide zy_mainBannerCont">2</div>
+                <div class="zy_mainBannerCont3 swiper-slide zy_mainBannerCont">3</div>
+                <div class="zy_mainBannerCont4 swiper-slide zy_mainBannerCont">4</div>
+                <div class="zy_mainBannerCont5 swiper-slide zy_mainBannerCont">5</div>
+                <div class="zy_mainBannerCont6 swiper-slide zy_mainBannerCont">6</div>
+                <div class="zy_mainBannerCont7 swiper-slide zy_mainBannerCont">7</div>
+                <div class="zy_mainBannerCont8 swiper-slide zy_mainBannerCont">8</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- 边栏 -->
+    <aside class="zy_mainAside"></aside>
+</main>
+
+
+<script src="./../static/script/swiper.min.js"></script>
+<script src="./../static/script/require.js" data-main="./../static/script/zy_main.js"></script>
+<script>
+var mySwiper = new Swiper('.swiper-container', {
+    // autoplay: 3000,//可选选项，自动滑动
+    initialSlide :0,//设定初始化时slide的索引
+    direction : 'horizontal',//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)。
+    speed:300,//滑动速度，即slider自动滑动开始到结束的时间（单位ms），也是触摸滑动时释放至贴合的时间。
+    loop: true,
+    pagination: '.swiper-pagination',
+    paginationClickable: true
+});
+</script>
+</body>
+</html>

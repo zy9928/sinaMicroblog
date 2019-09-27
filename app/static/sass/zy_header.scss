@@ -1,0 +1,311 @@
+header{
+    width: 100%;
+    border-top: 2px solid #FA7D3C;
+    border-bottom: 1px solid #F2F2F2;
+    min-width: 1280px;
+    background-color: #fff;
+    .zy_headerMain{
+        height: 48px;
+        width: 1280px;
+        margin: 0 auto;
+        // 头部logo
+        .zy_sinaLogo{
+            width: 140px;
+            height: 48px;
+            display: block;
+            float: left;
+            font-size: 0;
+            line-height: 0;
+            background-image: url(./../images/zy_sinaLogo.jpg);
+            background-repeat: no-repeat;
+            background-position: 30px 9px;
+        }
+        // 头部search
+        .zy_headerForm{
+            @mixin zy_headerSearchDown{
+                display: none;
+                width: 462px;
+                border: 1px solid #CCCCCC;
+                background-color: #FFFFFF;
+                position: absolute;
+                z-index: 10;
+                top: 30px;
+                padding: 2px;
+            }
+            @mixin zy_searchAFy{
+                position: relative;
+                display: block;
+                font-size: 12px;
+                line-height: 12px;
+                padding: 9px 32px 9px 13px;
+                color: #4B4B4B;
+                width:418px;
+                &:hover{
+                    background-color: #F2F2F5;
+                    color: #EB7350;
+                }
+            }
+            position: relative;
+            float: left;
+            width: 468px;
+            height: 28px;
+            margin-top: 9px;
+            // 输入框
+            .zy_headerSearch{
+                border: 1px solid #CCCCCC;
+                padding: 3px 38px 3px 10px;
+                width:418px;
+                font-size: 12px;
+                line-height: 20px;
+                outline: none;
+                background-color: #F2F2F5;
+            }
+            // 提交按钮
+            .zy_headerSubmit{
+                position: absolute;
+                display: block;
+                width: 16px;
+                height: 16px;
+                font-size:16px;
+                line-height:16px;
+                right: 11px;
+                top: 7px;
+                cursor: pointer;
+                color: #696E78;
+                &:hover{
+                    color: #FA7D3C;
+                }
+            }
+            // 提示词
+            .zy_headerSearchTs{
+                color: #808080;
+                font-size: 12px;
+                line-height: 20px;
+                position: absolute;
+                top: 3px;
+                left: 10px;
+            }
+            // 热搜
+            .zy_headerHotSearch{
+                height: 350px;
+                @include zy_headerSearchDown;
+                // 热搜词条
+                .zy_headerHotSearchLi{
+                    @include zy_searchAFy;
+                    // 排名
+                    .zy_headerSearchTop{
+                        display: inline-block;
+                        width:12px;
+                        text-align: center;
+                        margin-right: 5px;
+                        font-size: 10px;
+                        line-height: 12px;
+                        border-radius: 50%;
+                        background-color: #696E78;
+                        color: #fff;
+                    }
+                    // 第一名
+                    .zy_headerSearchTop1{
+                        background-color: #DF3E3E;
+                    }
+                    // 第二名
+                    .zy_headerSearchTop2{
+                        background-color: #FA7D3C;
+                    }
+                    // 标记
+                    .zy_headerSearchBj{
+                        font-size: 12px;
+                        line-height: 16px;
+                        display: block;
+                        width:16px;
+                        border-radius: 2px;
+                        color: #fff;
+                        text-align: center;
+                        position: absolute;
+                        right: 12px;
+                        top: 6px;
+                    }
+                    // 最热标记
+                    .zy_headerHotBj{
+                        background-color: #FF9508;
+                    }
+                    // 最新标记
+                    .zy_headerNewBj{
+                        background-color: #FF3D57;
+                    }
+                }
+                // 查看更多热搜词条
+                .zy_headerHotSearchLiMore{
+                    color: #FA7D3C;
+                    &:hover{
+                        background-color: #F2F2F5;
+                        color: #EB7350;
+                    }
+                }
+            }
+            // 联想输入推荐
+            .zy_headerSearchTj{
+                @include zy_headerSearchDown;
+                // 推荐微博
+                .zy_headerSearchWbLi{
+                    border-bottom: 1px solid #F2F2F5;
+                    .zy_headerSearchWb{
+                        @include zy_searchAFy;
+                    }
+                }
+                // 推荐用户
+                .zy_headerSearchUserLi{
+                    // 用户列表
+                    .zy_headerSearchUser{
+                        position: relative;
+                        display: block;
+                        font-size: 12px;
+                        line-height: 12px;
+                        padding: 5px 32px 5px 13px;
+                        color: #4B4B4B;
+                        width:418px;
+                        height: 35px;
+                        &:hover{
+                            background-color: #F2F2F5;
+                        }
+                        // 头像
+                        .zy_headerSearchUserHeadImg{
+                            width: 30px;
+                            height: 30px;
+                            display: block;
+                            margin-right: 10px;
+                            float:left;
+                        }
+                        // 用户名 + V字认证
+                        .zy_headerSearchUserID{
+                            float: left;
+                            height: 15px;
+                            width: 370px;
+                            margin-bottom: 4px;
+                            // 用户名
+                            .zy_headerSearchUserName{
+                                line-height: 15px;
+                                font-size: 12px;
+                                color: #FA7D3C;
+                                float: left;
+                            }
+                            // V 字认证
+                            .zy_headerSearchUserRz{
+                                display: inline-block;
+                                width: 15px;
+                                height: 12px;
+                                margin-left: 3px;
+                                margin-top: 1px;
+                                background-size: 15px 12px;
+                            }
+                            // 蓝v
+                            .zy_headerSearchUserBv{
+                                background-image: url(./../icon/icon_bihu62e6ymm/VL.png);
+                            }
+                            // 黄v
+                            .zy_headerSearchUserYv{
+                                background-image: url(./../icon/icon_bihu62e6ymm/VH.png);
+                            }
+                            // 红v
+                            .zy_headerSearchUserRv{
+                                background-image: url(./../icon/icon_bihu62e6ymm/V_1.png);
+                            }
+                        }
+                        // 性别 + 粉丝数量
+                        .zy_headerSearchUserBc{
+                            height: 16px;
+                            width: 370px;
+                            float: left;
+                            // 性别
+                            .zy_headerSearchUserSex{
+                                display: inline-block;
+                                width: 13px;
+                                height: 13px;
+                                background-size: 13px 13px;
+                                margin-right: 4px;
+                            }
+                            // 男
+                            .zy_headerSearchUserMan{
+                                background-image: url(./../icon/icon_bihu62e6ymm/man.png);
+                            }
+                            // 女
+                            .zy_headerSearchUserWoman{
+                                background-image: url(./../icon/icon_bihu62e6ymm/women.png);
+                            }
+                            // 粉丝数
+                            .zy_headerSearchUserFs{
+                                font-size: 12px;
+                                line-height: 16px;
+                                color: #8B8B8B;
+                            }
+                        }
+                    }
+                    // 更多用户
+                    .zy_headerSearchUserMore{
+                        height: 12px;
+                    }
+                }
+                .zy_headerSearchValue{
+                    color: #EB7350;
+                }
+            }
+        }
+        // 头部导航栏
+        .zy_headerNavKuai{
+            width: 443px;
+            height: 48px;
+            float: right;
+            // 导航
+            .zy_headerNavUl{
+                margin-right: 7px;
+                width: 319px;
+                height: 48px;
+                float: left;
+                line-height: 48px;
+                font-size: 14px;
+                color:#333;
+                // 每条导航
+                .zy_headerNavLi{
+                    padding: 0 13px;
+                    // 导航的标记
+                    .zy_headerNavIc{
+                        width: 22px;
+                        font-weight: bold;
+                        display: inline-block;
+                        color: #696E78;
+                    }
+                    // 导航的划过特效
+                    &:hover .zy_headerNavIc,
+                    &:hover .zy_headerNav{
+                        color: #FA7D3C;
+                    }
+                }
+            }
+            // 头部登入注册
+            .zy_headerLogin{
+                width: 117px;
+                height: 48px;
+                float: left;
+                line-height: 48px;
+                font-size: 14px;
+                // 注册
+                .zy_headerJoin{
+                    padding: 0 12px;
+                    line-height: 14px;
+                    color: #333333;
+                    border-right: 1px solid #D9D9D9;
+                    &:hover{
+                        color: #EB7350;
+                    }
+                }
+                .zy_headerEnter{
+                    padding: 0 12px;
+                    color: #333333;
+                    &:hover{
+                        color: #EB7350;
+                    }
+                }
+            }
+        }
+    }
+}

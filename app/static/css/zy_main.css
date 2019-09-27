@@ -1,0 +1,81 @@
+main {
+  width: 1170px;
+  margin-left: -585px;
+  left: 50%;
+  padding-top: 15px;
+  position: absolute;
+  top: 51px; }
+  main .zy_mainNav {
+    width: 110px;
+    float: left; }
+    main .zy_mainNav .zy_mainNavA {
+      display: block;
+      height: 40px;
+      font-size: 18px;
+      line-height: 40px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 5px;
+      border-radius: 3px; }
+      main .zy_mainNav .zy_mainNavA:hover {
+        background: linear-gradient(160deg, #FA302F, #FF5B36);
+        color: #fff; }
+    main .zy_mainNav .zy_mainNavAActive {
+      background: linear-gradient(160deg, #FA302F, #FF5B36);
+      color: #fff; }
+  main .zy_mainMain {
+    position: absolute;
+    left: 140px;
+    width: 660px;
+    height: 10000px; }
+    main .zy_mainMain .zy_mainBannerKuai {
+      width: 660px;
+      height: 308px; }
+      main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang {
+        height: 288px;
+        width: 660px; }
+        main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont {
+          width: 660px;
+          height: 308px;
+          float: left; }
+          main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont .zy_bannerContImgKuan1 {
+            display: block;
+            float: left;
+            width: 512px;
+            height: 288px;
+            background-size: 100% 100%;
+            position: relative;
+            margin-right: 8px; }
+          main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont .zy_bannerContImgKuan2 {
+            display: block;
+            float: left;
+            width: 140px;
+            height: 140px;
+            background-size: 100% 100%;
+            position: relative; }
+            main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont .zy_bannerContImgKuan2 .zy_bannerCOntText2 {
+              font-size: 14px;
+              color: #fff;
+              font-weight: bold;
+              display: inline-block;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              padding: 4px;
+              line-height: 20px;
+              background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%); }
+          main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont .zy_bannerContImgKuan3 {
+            margin-top: 8px; }
+      main .zy_mainMain .zy_mainBannerKuai .swiper-pagination {
+        bottom: 2px; }
+        main .zy_mainMain .zy_mainBannerKuai .swiper-pagination .swiper-pagination-bullet {
+          width: 6px;
+          height: 6px; }
+        main .zy_mainMain .zy_mainBannerKuai .swiper-pagination .swiper-pagination-bullet-active {
+          background: #FA7D3C; }
+  main .zy_mainAside {
+    float: right;
+    width: 340px; }
+
+/*# sourceMappingURL=zy_main.css.map */
