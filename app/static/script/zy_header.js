@@ -1,7 +1,8 @@
 define([
     'jquery',
-    'scrollEvt'
-], function($, scrollEvt) {
+    'scrollEvt',
+    'hold'
+], function($, scrollEvt, hold) {
     // 头部固定定位 + 定位后1秒出现阴影
     function zy_headerScroll(){
         // 异步等待
@@ -51,6 +52,30 @@ define([
             $('.zy_headerSearchTs').css('display', 'none');
             // 显示热搜框
             $('.zy_headerHotSearch').css('display', 'block');
+            // 获取热搜内容
+            hold.mockHotSearch();
+            $.ajax({
+                url: "10.20.152.6/hotSearch",
+                success: function(date){
+                    date = JSON.parse(date);
+                    var hotSear = `<a href="" class="zy_headerHotSearchLi zy_headerHotSearchLiMore">查看完整热搜榜»</a>`;
+                    for(var i = 0; i < 10 ; i++){
+                        if(i == 0){
+                            var value = `<a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop zy_headerSearchTop1">${date.hotSearch[i].top}</i>${date.hotSearch[i].title}${date.hotSearch[i].bj}</a>`
+                        }else if(i == 1){
+                            var value = `<a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop zy_headerSearchTop2">${date.hotSearch[i].top}</i>${date.hotSearch[i].title}${date.hotSearch[i].bj}</a>`
+                        }else{
+                            var value = `<a href="" class="zy_headerHotSearchLi"><i class="zy_headerSearchTop">${date.hotSearch[i].top}</i>${date.hotSearch[i].title}${date.hotSearch[i].bj}</a>`
+                        }
+                        hotSear = hotSear.concat(value);
+                    }
+                    $('.zy_headerHotSearchUl').empty();
+                    $('.zy_headerHotSearchUl').append(hotSear);
+                },
+                fail: function(error){
+                    console.log(error);
+                }
+            });
         });
         // input失去焦点
         $('.zy_headerSearch').on('blur', function(){
@@ -79,6 +104,63 @@ define([
                 $('.zy_headerHotSearch').css('display', 'block');
                 $('.zy_headerSearchTj').css('display', 'none');
             }
+            // 获取联想词库
+            // 获取热搜内容
+            hold.mockTjSear();
+            $.ajax({
+                url: "10.20.152.6/TjSear",
+                success: function(date){
+                    date = JSON.parse(date);
+                    // console.log($('.zy_headerSearch').val());
+                    var ppWb = [];
+                    var ppUser = [];
+                    for(var i = 0 ; i < date.tjSearWb.length ; i++){
+                        if(date.tjSearWb[i].indexOf($('.zy_headerSearch').val()) != -1){
+                            ppWb.push(date.tjSearWb[i]);
+                        }
+                        if(date.tjSearUser[i].userId.indexOf($('.zy_headerSearch').val()) != -1){
+                            ppUser.push(date.tjSearUser[i])
+                        }
+                    }
+                    var ppWbL, ppUserL;
+                    if(ppWb.length >= 5){
+                        ppWbL = 5;
+                    }else{
+                        ppWbL = ppWb.length;
+                    }
+                    if(ppUser.length >= 5){
+                        ppUserL = 5;
+                    }else{
+                        ppUserL = ppUser.length;
+                    }
+                    var tjWb = `<a href="" class="zy_headerSearchWb zy_headerSearchWbMore">搜索“<span class="zy_headerSearchValue">${$('.zy_headerSearch').val()}</span>”相关微博</a>`;
+                    for(var m = 0 ; m < ppWbL ; m++){
+                        var valueWb = `<a href="" class="zy_headerSearchWb">${ppWb[m]}</a>`
+                        tjWb = tjWb.concat(valueWb);
+                    }
+                    var tjUser = `<a href="" class="zy_headerSearchUser zy_headerSearchUserMore">搜索“<span class="zy_headerSearchValue">${$('.zy_headerSearch').val()}</span>”相关用户»</a>`;
+                    for(var n = 0 ; n < ppUserL ; n++){
+                        var valueUser = `
+                            <a href="" class="zy_headerSearchUser">
+                                <!-- 头像 -->
+                                <img src="${ppUser[n].userImg}" alt="" class="zy_headerSearchUserHeadImg">
+                                <!-- 用户名 + V字认证 -->
+                                <h5 class="zy_headerSearchUserID"><span class="zy_headerSearchUserName">${ppUser[n].userId}</span>${ppUser[n].userRz}</h5>
+                                <!-- 性别 + 粉丝数量 -->
+                                <p class="zy_headerSearchUserBc">${ppUser[n].sex}<span class="zy_headerSearchUserFs">粉丝：${ppUser[n].num}</span></p>
+                            </a>
+                        `;
+                        tjUser = tjUser.concat(valueUser);
+                    }
+                    $('.zy_headerSearchWbLi').empty();
+                    $('.zy_headerSearchWbLi').append(tjWb);
+                    $('.zy_headerSearchUserLi').empty();
+                    $('.zy_headerSearchUserLi').append(tjUser);
+                },
+                fail: function(error){
+                    console.log(error);
+                }
+            });
         });
     }
 

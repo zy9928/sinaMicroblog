@@ -7,6 +7,7 @@ main{
     padding-top: 15px;
     position: absolute;
     top: 51px;
+    margin-bottom: 350px;
     // 左侧导航栏
     .zy_mainNav{
         width: 110px;
@@ -33,11 +34,13 @@ main{
             color: #fff;
         }
     }
+    // 中心版块
     .zy_mainMain{
         position: absolute;
+        top: 15px;
         left: 140px;
         width: 660px;
-        height: 10000px;
+        // height: 10000px;
         // banner区
         .zy_mainBannerKuai{
             width: 660px;
@@ -60,6 +63,35 @@ main{
                         background-size: 100% 100%;
                         position: relative;
                         margin-right: 8px;
+                        // banner1的标题
+                        .zy_bannerContText2{
+                            display: block;
+                            color: #fff;
+                            font-weight: bold;
+                            display: inline-block;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background:linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0) 100%);
+                            padding: 10px;
+                            // 标题内容
+                            .zy_bannerContTextTitle{
+                                font-size: 18px;
+                                line-height: 18px;
+                                margin-bottom: 10px;
+                                display: block;
+                            }
+                            // 备注
+                            .zy_bannerContTextBz{
+                                font-size: 12px;
+                                line-height: 12px;
+                                // 讨论量
+                                .zy_bannerContTextSpeek{
+                                    margin-right: 20px;
+                                }
+                            }
+                        }
                     }
                     // banner小图2
                     .zy_bannerContImgKuan2{
@@ -101,9 +133,603 @@ main{
                 }
             }
         }
+        // 中心内容
+        .zy_mainCont{
+            width: 100%;
+            // 新内容提示
+            .zy_mainNewCont{
+                background: rgb(255,253,236);
+                width: 660px;
+                height: 36px;
+                font-size: 14px;
+                line-height: 36px;
+                color: rgb(237,127,99);
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                .zy_mainNewX{
+                    font-size: 10px;
+                    color: rgb(105,110,120);
+                    position: absolute;
+                    right: 13px;
+                    font-weight: bold;
+                }
+            }
+            // 单图微博
+            .zy_mMImgWbBox{
+                cursor: pointer;
+                height: 102px;
+                padding: 10px 0;
+                border-bottom: 1px solid rgb(229,229,229);
+                // 图片盒子
+                .zy_mMImgImgBox{
+                    width: 158px;
+                    height: 102px;
+                    box-sizing: border-box;
+                    border: 1px solid rgba(200,200,200,0.7);
+                    float: left;
+                    margin-right: 13px;
+                    background-repeat: no-repeat;
+                    background-size: 120%;
+                    background-position: center center;
+                }
+                // 标题
+                .zy_mMImgWbH5{
+                    width: 489px;
+                    float: left;
+                    height: 48px;
+                    padding-top: 12px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: rgb(51,51,51);
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    a{
+                        color: rgb(235,115,80);
+                    }
+                }
+                // 备注栏
+                .zy_mMImgWbCont{
+                    width: 489px;
+                    float: left;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 12px;
+                    color: rgb(128,128,128);
+                    position: relative;
+                    // 用户图片
+                    .zy_mMImgWbUserImg{
+                        // display: inline-block;
+                        position: relative;
+                        top: 50%;
+                        margin-top: -10px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        float: left;
+                        margin-right: 3px;
+                        vertical-align: middle;
+                    }
+                    // 用户ID
+                    .zy_mMImgWbUserId{
+                        color: rgb(128,128,128);
+                        margin-right: 8px;
+                        float: left;
+                    }
+                    .zy_mMImgWbTime{
+                        float: left;
+                    }
+                    // 点赞评论转发
+                    .zy_mMImgWbDz,
+                    .zy_mMImgWbPl,
+                    .zy_mMImgWbZf{
+                        line-height: 12px;
+                        float: right;
+                        border-right: 1px solid rgb(204,204,204);
+                        padding: 0 4px;
+                        position: relative;
+                        top: 50%;
+                        margin-top: -6px;
+                        i{
+                            margin-right: 4px;
+                            &:hover{
+                                color: rgb(237,127,99);
+                            }
+                        }
+                    }
+                    .zy_mMImgWbDz{
+                        border: none;
+                        padding: 0 0 0 4px;
+                    }
+                }
+            }
+            // 多图微博
+            .zy_mMImgsWbBox{
+                height: 186px;
+                width: 100%;
+                cursor: pointer;
+                border-bottom: 1px solid rgb(229,229,229);
+                // 标题
+                .zy_mMImgsH5{
+                    line-height: 44px;
+                    height: 44px;
+                    font-size: 14px;
+                    color: rgb(51,51,51);
+                    overflow: hidden;
+                    width: 100%;
+                    a{
+                        color: rgb(247,103,29);
+                    }
+                }
+                // 图片盒子
+                .zy_mMImgsBox{
+                    height: 102px;
+                    width: 100%;
+                    img{
+                        width: 158px;
+                        height: 102px;
+                        float: left;
+                        margin-right: 9px;
+                    }
+                    .zy_mMImgsLast{
+                        margin-right: 0;
+                    }
+                }
+                // 备注栏
+                .zy_mMImgsWbCont{
+                    width: 100%;
+                    float: left;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 12px;
+                    color: rgb(128,128,128);
+                    position: relative;
+                    // 用户图片
+                    .zy_mMImgsWbUserImg{
+                        // display: inline-block;
+                        position: relative;
+                        top: 50%;
+                        margin-top: -10px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        float: left;
+                        margin-right: 6px;
+                        vertical-align: middle;
+                    }
+                    // 用户ID
+                    .zy_mMImgsWbUserId{
+                        color: rgb(128,128,128);
+                        margin-right: 12px;
+                        float: left;
+                    }
+                    .zy_mMImgsWbTime{
+                        float: left;
+                    }
+                    // 点赞评论转发
+                    .zy_mMImgsWbDz,
+                    .zy_mMImgsWbPl,
+                    .zy_mMImgsWbZf{
+                        line-height: 12px;
+                        float: right;
+                        border-right: 1px solid rgb(204,204,204);
+                        padding: 0 9px;
+                        position: relative;
+                        top: 50%;
+                        margin-top: -6px;
+                        i{
+                            margin-right: 7px;
+                            &:hover{
+                                color: rgb(237,127,99);
+                            }
+                        }
+                    }
+                    .zy_mMImgsWbDz{
+                        border: none;
+                        padding: 0 0 0 9px;
+                    }
+                }
+            }
+            // 加载更多
+            .zy_mLoading{
+                display: none;
+                background: rgb(255,253,236);
+                width: 660px;
+                height: 36px;
+                font-size: 14px;
+                line-height: 36px;
+                color: rgb(237,127,99);
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                @keyframes loading {
+                    0%{
+                        transform: rotate(0);
+                    }
+                    100%{
+                        transform: rotate(360deg);
+                    }
+                }
+                span{
+                    display: inline-block;
+                    font-size: 14px;
+                    margin-right: 5px;
+                    color: rgb(237,127,99);
+                    font-weight: bold;
+                    animation-name: loading;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: both;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
     }
+    // 右侧版块
     .zy_mainAside{
         float: right;
         width: 340px;
+        // 登入版块
+        .zy_mainAsdlogin{
+            width: 302px;
+            height: 288px;
+            background-color: rgb(242,242,245);
+            padding: 19px;
+            margin-bottom: 20px;
+            // 登入主体
+            .zy_mainAsdLoginMain{
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                box-sizing: border-box;
+                border: 1px solid rgb(226,226,229);
+                border-radius: 1px;
+                padding: 9px 15px 0;
+                // 登入标题
+                .zy_mainLoginTitle{
+                    width: 270px;
+                    line-height: 34px;
+                    height: 35px;
+                    // 标题内容样式
+                    span{
+                        width: 135px;
+                        height: 35px;
+                        box-sizing: border-box;
+                        display: block;
+                        float: left;
+                        text-align: center;
+                        font-size: 14px;
+                        color: rgb(128,128,128);
+                        border-bottom: 1px solid rgb(229,229,229);
+                        cursor: pointer;
+                        transition: all 0.5s;
+                    }
+                    // 标题被点击样式
+                    .zy_loginActive{
+                        border-bottom: 3px solid rgb(250,125,60);
+                        color: rgb(0,0,0);
+                    }
+                }
+                // 注册提示
+                @mixin zy_loginTip {
+                    width: 100%;
+                    font-size: 12px;
+                    color: rgb(128,128,128);
+                    a{
+                        color: rgb(235,115,80);
+                    }
+                }
+                // 安全登入内容
+                .zy_mainSafeLoginCont{
+                    display: none;
+                    width: 270px;
+                    height: 242px;
+                    position: relative;
+                    // 二维码使用演示
+                    .zy_mainSafeLoginImg{
+                        position: absolute;
+                        left: -255px;
+                        z-index: 10;
+                        top: -63px;
+                    }
+                    // 二维码框
+                    .zy_loginEWMKuan{
+                        margin: 0 auto;
+                        width: 172px;
+                        height: 165px;
+                        border: 1px solid rgb(243,243,243);
+                        padding: 17px 0 7px;
+                        text-align: center;
+                        // 二维码
+                        .zy_loginEWM{
+                            width: 144px;
+                            margin: 0 auto;
+                            height: 144px;
+                        }
+                        // 二维码说明
+                        .zy_loginEWMSpan{
+                            width: 100%;
+                            line-height: 28px;
+                            font-size: 12px;
+                            display: inline-block;
+                        }
+                    }
+                    // 二维码友情提示
+                    .zy_loginEWMTip{
+                        @include zy_loginTip;
+                        line-height: 26px;
+                        text-align: center;
+                    }
+                }
+                // 账号登入内容
+                .zy_mainIDLoginCont{
+                    padding-top: 16px;
+                    // display: none;
+                    width: 270px;
+                    height: 226px;
+                    position: relative;
+                    // 格式化表单内的input
+                    input{
+                        border: none;
+                        font-size: 12px;
+                        color: rgb(128,128,128);
+                        line-height: 12px;
+                        outline: none;
+                    }
+                    // 共用input盒子的属性
+                    @mixin inputBox {
+                        border: 1px solid rgb(204,204,204);
+                        border-radius: 1px;
+                        line-height: 32px;
+                    }
+                    // 用户
+                    .zy_mLoginUserBox{
+                        @include inputBox;
+                        margin-bottom: 12px;
+                        i{
+                            font-size: 14px;
+                            line-height: 14px;
+                            margin: 0 11px;
+                        }
+                    }
+                    // 密码
+                    .zy_mLoginPwdBox{
+                        @include inputBox;
+                        margin-bottom: 14px;
+                        i{
+                            font-size: 14px;
+                            line-height: 14px;
+                            margin: 0 11px;
+                        }
+                    }
+                    // 记住/忘记密码
+                    .zy_mLoginRemFogBox{
+                        height: 12px;
+                        line-height: 12px;
+                        color: rgb(128,128,128);
+                        margin-bottom: 13px;
+                        // 忘记密码s
+                        .zy_mLoginFoget{
+                            float: right;
+                            color: rgb(128,128,128);
+                            &:hover{
+                                color: rgb(236,127,95);
+                            }
+                        }
+                        // 记住密码
+                        .zy_mLoginRembText{
+                            margin-left: 7px;
+                            float: left;
+                        }
+                        .zy_mLoginRemb{
+                            float: left;
+                        }
+                    }
+                    // 登入框
+                    .zy_mLoginSub{
+                        display: block;
+                        width: 100%;
+                        cursor: pointer;
+                        margin-bottom: 3px;
+                        background-color: rgb(255,129,64);
+                        height: 34px;
+                        border: 1px solid rgb(247,124,61);
+                        border-radius: 1px;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: #fff;
+                        text-align: center;
+                        &:hover{
+                            background-color: rgb(247,103,29);
+                        }
+                    }
+                    // 注册提示
+                    .zy_loginIDTip{
+                        @include zy_loginTip;
+                        line-height: 34px;
+                        border-bottom: 1px solid rgb(229,229,229);
+                        margin-bottom: 5px;
+                    }
+                    // 其它登入方式
+                    .zy_mIDLoginMore{
+                        height: 30px;
+                        line-height: 30px;
+                        span{
+                            color: rgb(139,139,139);
+                            font-size: 12px;
+                            line-height: 12px;
+                        }
+                        a{
+                            font-size: 14px;
+                            line-height: 14px;
+                            color: rgb(255,120,31);
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+            }
+        }
+        // 侧边栏标题共用
+        @mixin asdTitle{
+            background-color: rgb(242,242,245);
+            border-top: 1px solid rgb(250,47,47);
+            padding-top: 23px;
+            // 标题
+            .zy_mAsdHotTitle{
+                font-size: 18px;
+                line-height: 18px;
+                color: rgb(51,51,51);
+                padding-left: 20px;
+                font-weight: bold;
+                margin-bottom: 19px;
+            }
+        }
+        // 微博热门话题/热点
+        .zy_mAsdHotTitleBox{
+            height: 420px;
+            margin-bottom: 20px;
+            a{
+                display: block;
+                padding: 0 20px;
+                color: rgb(51,51,51);
+            }
+            @include asdTitle;
+            // 内容
+            .zy_mAsdHotContBox{
+                margin-bottom: 20px;
+                height: 50px;
+                width: 100%;
+                // 图片
+                .zy_mAsdHotImg{
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 12px;
+                    float: left;
+                }
+                // 标题
+                .zy_mAsdHotContTitle{
+                    float: left;
+                    line-height: 27px;
+                    font-size: 14px;
+                    width: 200px;
+                    &:hover{
+                        color: rgb(235,125,93);
+                    }
+                }
+                // 阅读/评论量
+                .zy_mAsdHotContCont{
+                    float: left;
+                    font-size: 12px;
+                    line-height: 22px;
+                    color: rgb(128,128,128);
+                    span{
+                        margin-right: 5px;
+                    }
+                }
+                // 内容
+                .zy_mAsdNewContCont{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 236px;
+                    text-overflow: ellipsis;
+                }
+            }
+            // 更多
+            .zy_mAsdHotTitleMore{
+                border-top: 1px solid rgb(217,217,217);
+                line-height: 28px;
+                width: calc(100% - 40px);
+                text-align: center;
+                font-size: 12px;
+                span,
+                i{
+                    vertical-align: middle;
+                }
+                &:hover span,
+                &:hover i{
+                    color: rgb(235,125,93);
+                }
+            }
+        }
+        // 微博找人
+        .zy_mAsdFindManBox{
+            @include asdTitle;
+            margin-bottom: 20px;
+            .zy_mAsdHotTitle{
+                margin-bottom: 0;
+            }
+            // 找人分类版块
+            .zy_mAsdFindBox{
+                margin: 0 20px;
+                padding: 22px 0 9px;
+                border-bottom: 1px solid rgb(217,217,217);
+                // 标题
+                .zy_mAsdFindTitle{
+                    font-size: 14px;
+                    color: rgb(128,128,128);
+                    margin-bottom: 9px;
+                }
+                .zy_mAsdFindA{
+                    font-size: 11px;
+                    line-height: 37px;
+                    color: rgb(91,91,92);
+                    width: 99px;
+                    float: left;
+                    display: block;
+                    i{
+                        float: left;
+                        margin-right: 6px;
+                        color: rgb(130,134,142);
+                        font-weight: bold;
+                        &:hover +span{
+                            color: rgb(236,127,95);
+                        }
+                    }
+                    span{
+                        &:hover{
+                            color: rgb(236,127,95);
+                        }
+                    }
+                }
+            }
+            .zy_mAsdFindFamsBox{
+                border: none;
+            }
+        }
+        // 投诉
+        .zy_mAsdTouSuBox{
+            background-color: rgb(242,242,245);
+            border-top: 1px solid rgb(250,47,47);
+            line-height: 57px;
+            font-size: 12px;
+            padding-left: 21px;
+            a{
+                color: rgb(51,51,51);
+            }
+        }
+        // 刷新和回归顶部按钮
+        .zy_pageTopResetBtn{
+            position: fixed;
+            bottom: 60px;
+            left: 50%;
+            margin-left: 595px;
+            div{
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                background-color: rgb(164,167,173);
+                &:hover{
+                    background-color: rgb(105,110,120);
+                }
+                color: rgb(255,255,255);
+                margin-bottom: 8px;
+                line-height: 40px;
+                text-align: center;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }

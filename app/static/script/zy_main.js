@@ -8,7 +8,10 @@ require.config({
         "jquery": "jquery-1.8.3",
         "header": "zy_header",
         "scrollEvt": "zy_scroll",
-        "main": "zy_bodyMain"
+        "main": "zy_bodyMain",
+        "hold": "zy_hold",
+        "aside": "zy_aside",
+        "mock": "./../../../node_modules/mockjs/dist/mock"
     }
 });
 
@@ -21,4 +24,14 @@ require(['header'], function(header){
 // 导入main主体js文件
 require(['main'], function(main){
     main.mainNav();
+    main.mainCont();
+    main.mainAside();
+    main.mainContAjax();
+    // main.mainBannerAjax();
+});
+
+// 请求数据
+require(['aside', 'jquery'],function(aside, $){
+    aside.hotHt();
+    aside.newCont();
 });

@@ -4,7 +4,8 @@ main {
   left: 50%;
   padding-top: 15px;
   position: absolute;
-  top: 51px; }
+  top: 51px;
+  margin-bottom: 350px; }
   main .zy_mainNav {
     width: 110px;
     float: left; }
@@ -25,9 +26,9 @@ main {
       color: #fff; }
   main .zy_mainMain {
     position: absolute;
+    top: 15px;
     left: 140px;
-    width: 660px;
-    height: 10000px; }
+    width: 660px; }
     main .zy_mainMain .zy_mainBannerKuai {
       width: 660px;
       height: 308px; }
@@ -46,6 +47,27 @@ main {
             background-size: 100% 100%;
             position: relative;
             margin-right: 8px; }
+            main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont .zy_bannerContImgKuan1 .zy_bannerContText2 {
+              display: block;
+              color: #fff;
+              font-weight: bold;
+              display: inline-block;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%);
+              padding: 10px; }
+              main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont .zy_bannerContImgKuan1 .zy_bannerContText2 .zy_bannerContTextTitle {
+                font-size: 18px;
+                line-height: 18px;
+                margin-bottom: 10px;
+                display: block; }
+              main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont .zy_bannerContImgKuan1 .zy_bannerContText2 .zy_bannerContTextBz {
+                font-size: 12px;
+                line-height: 12px; }
+                main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont .zy_bannerContImgKuan1 .zy_bannerContText2 .zy_bannerContTextBz .zy_bannerContTextSpeek {
+                  margin-right: 20px; }
           main .zy_mainMain .zy_mainBannerKuai .zy_mainBannerContLang .zy_mainBannerCont .zy_bannerContImgKuan2 {
             display: block;
             float: left;
@@ -74,8 +96,463 @@ main {
           height: 6px; }
         main .zy_mainMain .zy_mainBannerKuai .swiper-pagination .swiper-pagination-bullet-active {
           background: #FA7D3C; }
+    main .zy_mainMain .zy_mainCont {
+      width: 100%; }
+      main .zy_mainMain .zy_mainCont .zy_mainNewCont {
+        background: #fffdec;
+        width: 660px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 36px;
+        color: #ed7f63;
+        text-align: center;
+        position: relative;
+        cursor: pointer; }
+        main .zy_mainMain .zy_mainCont .zy_mainNewCont .zy_mainNewX {
+          font-size: 10px;
+          color: #696e78;
+          position: absolute;
+          right: 13px;
+          font-weight: bold; }
+      main .zy_mainMain .zy_mainCont .zy_mMImgWbBox {
+        cursor: pointer;
+        height: 102px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e5e5e5; }
+        main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgImgBox {
+          width: 158px;
+          height: 102px;
+          box-sizing: border-box;
+          border: 1px solid rgba(200, 200, 200, 0.7);
+          float: left;
+          margin-right: 13px;
+          background-repeat: no-repeat;
+          background-size: 120%;
+          background-position: center center; }
+        main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbH5 {
+          width: 489px;
+          float: left;
+          height: 48px;
+          padding-top: 12px;
+          line-height: 24px;
+          font-size: 14px;
+          color: #333333;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbH5 a {
+            color: #eb7350; }
+        main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont {
+          width: 489px;
+          float: left;
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          color: gray;
+          position: relative; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbUserImg {
+            position: relative;
+            top: 50%;
+            margin-top: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 3px;
+            vertical-align: middle; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbUserId {
+            color: gray;
+            margin-right: 8px;
+            float: left; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbTime {
+            float: left; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbDz,
+          main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbPl,
+          main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbZf {
+            line-height: 12px;
+            float: right;
+            border-right: 1px solid #cccccc;
+            padding: 0 4px;
+            position: relative;
+            top: 50%;
+            margin-top: -6px; }
+            main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbDz i,
+            main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbPl i,
+            main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbZf i {
+              margin-right: 4px; }
+              main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbDz i:hover,
+              main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbPl i:hover,
+              main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbZf i:hover {
+                color: #ed7f63; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgWbBox .zy_mMImgWbCont .zy_mMImgWbDz {
+            border: none;
+            padding: 0 0 0 4px; }
+      main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox {
+        height: 186px;
+        width: 100%;
+        cursor: pointer;
+        border-bottom: 1px solid #e5e5e5; }
+        main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsH5 {
+          line-height: 44px;
+          height: 44px;
+          font-size: 14px;
+          color: #333333;
+          overflow: hidden;
+          width: 100%; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsH5 a {
+            color: #f7671d; }
+        main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsBox {
+          height: 102px;
+          width: 100%; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsBox img {
+            width: 158px;
+            height: 102px;
+            float: left;
+            margin-right: 9px; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsBox .zy_mMImgsLast {
+            margin-right: 0; }
+        main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont {
+          width: 100%;
+          float: left;
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          color: gray;
+          position: relative; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbUserImg {
+            position: relative;
+            top: 50%;
+            margin-top: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 6px;
+            vertical-align: middle; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbUserId {
+            color: gray;
+            margin-right: 12px;
+            float: left; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbTime {
+            float: left; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbDz,
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbPl,
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbZf {
+            line-height: 12px;
+            float: right;
+            border-right: 1px solid #cccccc;
+            padding: 0 9px;
+            position: relative;
+            top: 50%;
+            margin-top: -6px; }
+            main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbDz i,
+            main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbPl i,
+            main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbZf i {
+              margin-right: 7px; }
+              main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbDz i:hover,
+              main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbPl i:hover,
+              main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbZf i:hover {
+                color: #ed7f63; }
+          main .zy_mainMain .zy_mainCont .zy_mMImgsWbBox .zy_mMImgsWbCont .zy_mMImgsWbDz {
+            border: none;
+            padding: 0 0 0 9px; }
+      main .zy_mainMain .zy_mainCont .zy_mLoading {
+        display: none;
+        background: #fffdec;
+        width: 660px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 36px;
+        color: #ed7f63;
+        text-align: center;
+        position: relative;
+        cursor: pointer; }
+@keyframes loading {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+        main .zy_mainMain .zy_mainCont .zy_mLoading span {
+          display: inline-block;
+          font-size: 14px;
+          margin-right: 5px;
+          color: #ed7f63;
+          font-weight: bold;
+          animation-name: loading;
+          animation-duration: 0.5s;
+          animation-fill-mode: both;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite; }
   main .zy_mainAside {
     float: right;
     width: 340px; }
+    main .zy_mainAside .zy_mainAsdlogin {
+      width: 302px;
+      height: 288px;
+      background-color: #f2f2f5;
+      padding: 19px;
+      margin-bottom: 20px; }
+      main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        border: 1px solid #e2e2e5;
+        border-radius: 1px;
+        padding: 9px 15px 0; }
+        main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainLoginTitle {
+          width: 270px;
+          line-height: 34px;
+          height: 35px; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainLoginTitle span {
+            width: 135px;
+            height: 35px;
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            text-align: center;
+            font-size: 14px;
+            color: gray;
+            border-bottom: 1px solid #e5e5e5;
+            cursor: pointer;
+            transition: all 0.5s; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainLoginTitle .zy_loginActive {
+            border-bottom: 3px solid #fa7d3c;
+            color: black; }
+        main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainSafeLoginCont {
+          display: none;
+          width: 270px;
+          height: 242px;
+          position: relative; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainSafeLoginCont .zy_mainSafeLoginImg {
+            position: absolute;
+            left: -255px;
+            z-index: 10;
+            top: -63px; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainSafeLoginCont .zy_loginEWMKuan {
+            margin: 0 auto;
+            width: 172px;
+            height: 165px;
+            border: 1px solid #f3f3f3;
+            padding: 17px 0 7px;
+            text-align: center; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainSafeLoginCont .zy_loginEWMKuan .zy_loginEWM {
+              width: 144px;
+              margin: 0 auto;
+              height: 144px; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainSafeLoginCont .zy_loginEWMKuan .zy_loginEWMSpan {
+              width: 100%;
+              line-height: 28px;
+              font-size: 12px;
+              display: inline-block; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainSafeLoginCont .zy_loginEWMTip {
+            width: 100%;
+            font-size: 12px;
+            color: gray;
+            line-height: 26px;
+            text-align: center; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainSafeLoginCont .zy_loginEWMTip a {
+              color: #eb7350; }
+        main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont {
+          padding-top: 16px;
+          width: 270px;
+          height: 226px;
+          position: relative; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont input {
+            border: none;
+            font-size: 12px;
+            color: gray;
+            line-height: 12px;
+            outline: none; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginUserBox {
+            border: 1px solid #cccccc;
+            border-radius: 1px;
+            line-height: 32px;
+            margin-bottom: 12px; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginUserBox i {
+              font-size: 14px;
+              line-height: 14px;
+              margin: 0 11px; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginPwdBox {
+            border: 1px solid #cccccc;
+            border-radius: 1px;
+            line-height: 32px;
+            margin-bottom: 14px; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginPwdBox i {
+              font-size: 14px;
+              line-height: 14px;
+              margin: 0 11px; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginRemFogBox {
+            height: 12px;
+            line-height: 12px;
+            color: gray;
+            margin-bottom: 13px; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginRemFogBox .zy_mLoginFoget {
+              float: right;
+              color: gray; }
+              main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginRemFogBox .zy_mLoginFoget:hover {
+                color: #ec7f5f; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginRemFogBox .zy_mLoginRembText {
+              margin-left: 7px;
+              float: left; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginRemFogBox .zy_mLoginRemb {
+              float: left; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginSub {
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 3px;
+            background-color: #ff8140;
+            height: 34px;
+            border: 1px solid #f77c3d;
+            border-radius: 1px;
+            font-size: 16px;
+            line-height: 32px;
+            color: #fff;
+            text-align: center; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mLoginSub:hover {
+              background-color: #f7671d; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_loginIDTip {
+            width: 100%;
+            font-size: 12px;
+            color: gray;
+            line-height: 34px;
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 5px; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_loginIDTip a {
+              color: #eb7350; }
+          main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mIDLoginMore {
+            height: 30px;
+            line-height: 30px; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mIDLoginMore span {
+              color: #8b8b8b;
+              font-size: 12px;
+              line-height: 12px; }
+            main .zy_mainAside .zy_mainAsdlogin .zy_mainAsdLoginMain .zy_mainIDLoginCont .zy_mIDLoginMore a {
+              font-size: 14px;
+              line-height: 14px;
+              color: #ff781f;
+              margin-right: 5px; }
+    main .zy_mainAside .zy_mAsdHotTitleBox {
+      height: 420px;
+      margin-bottom: 20px;
+      background-color: #f2f2f5;
+      border-top: 1px solid #fa2f2f;
+      padding-top: 23px; }
+      main .zy_mainAside .zy_mAsdHotTitleBox a {
+        display: block;
+        padding: 0 20px;
+        color: #333333; }
+      main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotTitle {
+        font-size: 18px;
+        line-height: 18px;
+        color: #333333;
+        padding-left: 20px;
+        font-weight: bold;
+        margin-bottom: 19px; }
+      main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotContBox {
+        margin-bottom: 20px;
+        height: 50px;
+        width: 100%; }
+        main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotContBox .zy_mAsdHotImg {
+          width: 50px;
+          height: 50px;
+          margin-right: 12px;
+          float: left; }
+        main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotContBox .zy_mAsdHotContTitle {
+          float: left;
+          line-height: 27px;
+          font-size: 14px;
+          width: 200px; }
+          main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotContBox .zy_mAsdHotContTitle:hover {
+            color: #eb7d5d; }
+        main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotContBox .zy_mAsdHotContCont {
+          float: left;
+          font-size: 12px;
+          line-height: 22px;
+          color: gray; }
+          main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotContBox .zy_mAsdHotContCont span {
+            margin-right: 5px; }
+        main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotContBox .zy_mAsdNewContCont {
+          white-space: nowrap;
+          overflow: hidden;
+          width: 236px;
+          text-overflow: ellipsis; }
+      main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotTitleMore {
+        border-top: 1px solid #d9d9d9;
+        line-height: 28px;
+        width: calc(100% - 40px);
+        text-align: center;
+        font-size: 12px; }
+        main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotTitleMore span,
+        main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotTitleMore i {
+          vertical-align: middle; }
+        main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotTitleMore:hover span, main .zy_mainAside .zy_mAsdHotTitleBox .zy_mAsdHotTitleMore:hover i {
+          color: #eb7d5d; }
+    main .zy_mainAside .zy_mAsdFindManBox {
+      background-color: #f2f2f5;
+      border-top: 1px solid #fa2f2f;
+      padding-top: 23px;
+      margin-bottom: 20px; }
+      main .zy_mainAside .zy_mAsdFindManBox .zy_mAsdHotTitle {
+        font-size: 18px;
+        line-height: 18px;
+        color: #333333;
+        padding-left: 20px;
+        font-weight: bold;
+        margin-bottom: 19px; }
+      main .zy_mainAside .zy_mAsdFindManBox .zy_mAsdHotTitle {
+        margin-bottom: 0; }
+      main .zy_mainAside .zy_mAsdFindManBox .zy_mAsdFindBox {
+        margin: 0 20px;
+        padding: 22px 0 9px;
+        border-bottom: 1px solid #d9d9d9; }
+        main .zy_mainAside .zy_mAsdFindManBox .zy_mAsdFindBox .zy_mAsdFindTitle {
+          font-size: 14px;
+          color: gray;
+          margin-bottom: 9px; }
+        main .zy_mainAside .zy_mAsdFindManBox .zy_mAsdFindBox .zy_mAsdFindA {
+          font-size: 11px;
+          line-height: 37px;
+          color: #5b5b5c;
+          width: 99px;
+          float: left;
+          display: block; }
+          main .zy_mainAside .zy_mAsdFindManBox .zy_mAsdFindBox .zy_mAsdFindA i {
+            float: left;
+            margin-right: 6px;
+            color: #82868e;
+            font-weight: bold; }
+            main .zy_mainAside .zy_mAsdFindManBox .zy_mAsdFindBox .zy_mAsdFindA i:hover + span {
+              color: #ec7f5f; }
+          main .zy_mainAside .zy_mAsdFindManBox .zy_mAsdFindBox .zy_mAsdFindA span:hover {
+            color: #ec7f5f; }
+      main .zy_mainAside .zy_mAsdFindManBox .zy_mAsdFindFamsBox {
+        border: none; }
+    main .zy_mainAside .zy_mAsdTouSuBox {
+      background-color: #f2f2f5;
+      border-top: 1px solid #fa2f2f;
+      line-height: 57px;
+      font-size: 12px;
+      padding-left: 21px; }
+      main .zy_mainAside .zy_mAsdTouSuBox a {
+        color: #333333; }
+    main .zy_mainAside .zy_pageTopResetBtn {
+      position: fixed;
+      bottom: 60px;
+      left: 50%;
+      margin-left: 595px; }
+      main .zy_mainAside .zy_pageTopResetBtn div {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background-color: #a4a7ad;
+        color: white;
+        margin-bottom: 8px;
+        line-height: 40px;
+        text-align: center; }
+        main .zy_mainAside .zy_pageTopResetBtn div:hover {
+          background-color: #696e78; }
+        main .zy_mainAside .zy_pageTopResetBtn div i {
+          font-size: 20px; }
 
 /*# sourceMappingURL=zy_main.css.map */

@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "43810817",
+      "name": "静音",
+      "font_class": "jingyin",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
       "icon_id": "43525656",
       "name": "游戏",
       "font_class": "94",
@@ -55,6 +62,13 @@
       "unicode_decimal": 59007
     },
     {
+      "icon_id": "43810818",
+      "name": "重播-互动",
+      "font_class": "zhongbo-m",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
       "icon_id": "43525663",
       "name": "商务",
       "font_class": "001",
@@ -62,11 +76,32 @@
       "unicode_decimal": 58880
     },
     {
+      "icon_id": "43810819",
+      "name": "退出全屏",
+      "font_class": "tuichuquanping",
+      "unicode": "e755",
+      "unicode_decimal": 59221
+    },
+    {
+      "icon_id": "43810820",
+      "name": "全屏",
+      "font_class": "quanping",
+      "unicode": "e7a6",
+      "unicode_decimal": 59302
+    },
+    {
       "icon_id": "43525664",
       "name": "指南针",
       "font_class": "09",
       "unicode": "e609",
       "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "43810821",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
     },
     {
       "icon_id": "43525665",
@@ -174,6 +209,13 @@
       "unicode_decimal": 58891
     },
     {
+      "icon_id": "43810822",
+      "name": "叉",
+      "font_class": "cha",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
       "icon_id": "43525680",
       "name": "设计",
       "font_class": "sheji1-copy",
@@ -279,6 +321,13 @@
       "unicode_decimal": 58996
     },
     {
+      "icon_id": "43810823",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
       "icon_id": "43525695",
       "name": "224视频、video-线性",
       "font_class": "shipinvideo-xianxing",
@@ -314,11 +363,32 @@
       "unicode_decimal": 58907
     },
     {
+      "icon_id": "43810824",
+      "name": "播放",
+      "font_class": "bofang1",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "43810825",
+      "name": "右箭头",
+      "font_class": "arrow-right-copy-copy-copy",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
       "icon_id": "43525700",
       "name": "心 爱心_复制",
       "font_class": "xinaixin_fuzhi",
       "unicode": "e607",
       "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "43810826",
+      "name": "音量",
+      "font_class": "yinliang",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
     },
     {
       "icon_id": "43525701",
@@ -417,6 +487,13 @@
       "font_class": "guohui",
       "unicode": "e611",
       "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "43810827",
+      "name": "加载中",
+      "font_class": "loading",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
     }
   ]
 }
