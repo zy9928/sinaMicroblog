@@ -99,6 +99,7 @@ main {
     main .zy_mainMain .zy_mainCont {
       width: 100%; }
       main .zy_mainMain .zy_mainCont .zy_mainNewCont {
+        display: none;
         background: #fffdec;
         width: 660px;
         height: 36px;

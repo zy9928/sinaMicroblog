@@ -144,6 +144,20 @@ define([
         }
         // 页面加载完成载入17条微博
         $(document).ready(contAjax17());
+        
+        // 点击刷新刷新数据
+        var timeSX = null;
+        clearInterval(timeSX);
+        timeSX = setInterval(function(){
+            $(".zy_mainNewCont").css('display', 'block');
+        }, 5000);
+        $(".zy_mainNewCont").on('click', function(){
+            $('.zy_mainCont').empty();
+            // console.log(contAjax17);
+            $('.zy_mainCont').append(`<div class="zy_mainNewCont">您有未读内容，点击查看<span class="iconfont icon-cha zy_mainNewX"></span></div>`);
+            contAjax17()
+            $(".zy_mainNewCont").css('display', 'none');
+        });
         // 当页面滚动过低再载入17条微博
         $(document).on('scroll', function(){
             // console.log($(document).height() - $(document).scrollTop());
