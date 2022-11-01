@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/zy9928/sinaMicroblog#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9"
   },
