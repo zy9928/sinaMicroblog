@@ -22,7 +22,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "mockjs": "^1.0.1-beta3"
