@@ -21,8 +21,8 @@
   "homepage": "https://github.com/zy9928/sinaMicroblog#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "mockjs": "^1.0.1-beta3"
